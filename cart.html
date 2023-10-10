@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Smasher | E-commerse</title>
+</head>
+
+<body>
+    <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/26.png" width="135px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="file:///C:/Users/MZ%20laptops/Desktop/E-commerce/My.Html">Home</a></li>
+                        <li><a href="file:///C:/Users/MZ%20laptops/Desktop/E-commerce/Products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="file:///C:/Users/MZ%20laptops/Desktop/E-commerce/contact.html">Contact</a></li>
+                        <li><a href="file:///C:/Users/MZ%20laptops/Desktop/E-commerce/Account.html?">Account</a></li>
+                    </ul>
+                    <img src="images/27.png" width="40px" height="40px">
+                    <div class="menu" onclick="menutoggle()">
+                    <img src="images/33333-removebg-preview.png" width="40px">
+                    </div>
+                </nav>
+            </div>
+    </div>
+    <div class="small-container">
+        <div class="row">
+            <img src="images/IMG-20230223-WA0011.jpg" id="ProductImg">
+        </div>
+        
+        <div class="small-container2">
+            <div class="img-container">
+                <img src="images/IMG-20230223-WA0011.jpg" width="100%" class="small-img">
+            </div>
+            <div class="img-container">
+                <img src="images/IMG-20230223-WA0012.jpg" width="100%" class="small-img">
+            </div>
+            <div class="img-container">
+                <img src="images/IMG-20230223-WA0013.jpg" width="100%" class="small-img">
+            </div>
+            <div class="img-container">
+                <img src="images/IMG-20230223-WA0014.jpg" width="100%" class="small-img">
+            </div>
+    </div>
+        <div class="row0">
+            <p>HOME / T-SHIRT</p>
+            <br><br><br>
+            <h1>RED PRINTED T-SHIRT <br> BY HRX</h1>
+            <br>
+            <h4>$50.00</h4>
+            <br>
+            <select>
+                <option>Select Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+            <br>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+            <h3>Product Details</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae animi sit <br> officia ipsa laborum
+                ducimus perferendis eaque. Nulla perspiciatis cupiditate <br> molestiae ipsum. Tempore minima alias
+                labore, soluta eveniet cum nisi.</p>
+        </div>
+    </div>
+    </div>
+    </div>
+   <div class="related">
+    <h2>Related Products</h2>
+   </div>
+    <div class="small-container1">
+        <div class="row1">
+            <img src="images/11.jpg">
+            <h3>Roadster Branded Shoes</h3>
+            <p>$50.00</p>
+        </div>
+        <div class="row1">
+            <img src="images/17.jpg">
+            <h3>Puma Black T-Shirt</h3>
+            <p>$50.00</p>
+        </div>
+        <div class="row1">
+            <img src="images/18.jpg">
+            <h3>HRX Socks</h3>
+            <p>$50.00</p>
+        </div>
+        <div class="row1">
+            <img src="images/19.jpg">
+            <h3>Fossil Branded Watch</h3>
+            <p>$50.00</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="container5">
+            <div class="row5">
+                <h3>Download Our App</h3>
+                <br>
+                <br>
+                <br>
+                <p>Download App for Android and IOS Mac Mobile Phones.</p>
+                <div class="app-logo">
+                    <img src="images/8.jpg" alt="">
+                    <img src="images/25.png" alt="">
+                </div>
+            </div>
+            <div class="row6">
+                <img src="images/26.png" alt="">
+                <p>Our Purpose is to Sustainably Make the Pleasure
+                    and Benefits of Sports Accessible to the many.</p>
+            </div>
+            <div class="row5">
+                <h3>Useful Links</h3>
+                <br>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Posts</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="row5">
+                <h3>Follow Us</h3>
+                <br>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Linkedin</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - My Smashers</p>
+    </div>
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        debugger
+        SmallImg[0].onclick = function () {
+            debugger
+            ProductImg.src = SmallImg[0].src
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src
+        }
+
+
+        var MenuItems = document.getElementById("MenuItems");
+    
+        MenuItems.style.maxHeight = "0px";
+    
+        function menutoggle(){
+    
+            if(MenuItems.style.maxHeight == "0px")
+            {
+               MenuItems.style.maxHeight = "400px";
+            }
+            else{
+            MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
